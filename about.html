@@ -1,7 +1,129 @@
 ---
 layout: default
-title: About
+title: Studio
+description: "Impact Forge LLC is an independent video game developer and publisher registered in the United States, developing and publishing Battlespace with Unreal Engine 5."
 ---
-<h1>About Impact Forge LLC</h1>
-<p>Impact Forge LLC is a forward-thinking company committed to creating innovative solutions that make a positive impact on the world.</p>
-<p>Our mission is to forge new paths in technology and sustainability, driving progress and change in industries that matter.</p>
+
+<section class="page-head">
+    <div class="wrap">
+        <p class="kicker">The Studio</p>
+        <h1>Impact Forge LLC</h1>
+        <p class="lede">
+            An independent video game developer and publisher. We make one game, and we make it
+            ourselves.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="who">
+    <div class="wrap">
+        <div class="grid grid-2">
+            <div>
+                <p class="kicker">Who We Are</p>
+                <h2>Developer and publisher, both</h2>
+                <p style="margin-top:1.2rem;">
+                    {% include entity-line.html %} We were founded in {{ site.company.founded }} to
+                    build tactical multiplayer shooters that take their players seriously.
+                </p>
+                <p>
+                    We are the <strong>developer</strong> of Battlespace: the game is designed, built
+                    and maintained in-house by our own team using Unreal Engine 5. We are also the
+                    <strong>publisher</strong> of Battlespace: we own the intellectual property,
+                    hold the storefront and platform relationships, set pricing and distribution, and
+                    are the party responsible to players under our published terms. There is no
+                    external publisher involved in the title.
+                </p>
+                <p>
+                    That combination is deliberate. It means the people writing the netcode are the
+                    same people answering support mail, and it means decisions about the game are made
+                    by the team that has to live with them.
+                </p>
+            </div>
+            <div>
+                <dl class="spec">
+                    <div><dt>Legal Name</dt><dd>{{ site.company.name }}</dd></div>
+                    <div><dt>Entity Type</dt><dd>{{ site.company.entity_type }}{% if site.company.jurisdiction and site.company.jurisdiction != "" %} (State of {{ site.company.jurisdiction }}){% endif %}</dd></div>
+                    <div><dt>Country</dt><dd>{{ site.company.country }}</dd></div>
+                    <div><dt>Founded</dt><dd>{{ site.company.founded }}</dd></div>
+                    <div><dt>Industry</dt><dd>Video game development and publishing</dd></div>
+                    <div><dt>Role</dt><dd>{{ site.company.role }} of {{ site.game.title }}</dd></div>
+                    <div><dt>Current Title</dt><dd>{{ site.game.title }} &mdash; {{ site.game.status }}</dd></div>
+                    <div><dt>Engine Licence</dt><dd>{{ site.game.engine }} (Epic Games, Inc. licensee)</dd></div>
+                    <div><dt>Official Website</dt><dd><a href="{{ site.url }}/">{{ site.url | remove: 'https://' }}</a></dd></div>
+                    <div><dt>General Contact</dt><dd><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></dd></div>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="what">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">What We Do</p>
+            <h2>Everything that goes into shipping a game</h2>
+        </div>
+        <div class="grid grid-3">
+            <article class="card">
+                <span class="card-index">Development</span>
+                <h3>Game development</h3>
+                <p>Gameplay and systems design, engine and network engineering, environment and character art, animation, audio, and QA &mdash; produced in-house on Unreal Engine 5.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">Publishing</span>
+                <h3>Publishing</h3>
+                <p>Storefront and platform relationships, age-rating submissions, pricing and distribution, marketing, community management and the player-facing legal terms for our titles.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">Operations</span>
+                <h3>Live services</h3>
+                <p>Dedicated game servers, account and sign-in integration, matchmaking, moderation and anti-cheat, patching, and direct player support.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="values">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">How We Work</p>
+            <h2>Principles we hold to</h2>
+        </div>
+        <ul class="tick-list" style="max-width:75ch;">
+            <li><strong>Depth over spectacle.</strong> Systems that reward learning beat systems that reward reflexes. We would rather a player win because they read the map correctly.</li>
+            <li><strong>Honest communication.</strong> We say what is in development and what is not. We do not announce dates we cannot hold, and we do not sell what does not exist yet.</li>
+            <li><strong>Fair monetisation.</strong> No pay-to-win. Nothing sold in Battlespace confers a competitive advantage in a match.</li>
+            <li><strong>Respect for player data.</strong> We collect what the game needs to run and to be supported, we say exactly what that is, and we do not sell personal information.</li>
+            <li><strong>Accountability.</strong> Support requests, privacy requests and legal notices reach the studio directly and are answered by us.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section--alt" id="technology">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Technology</p>
+            <h2>Unreal Engine and Epic Online Services</h2>
+        </div>
+        <div class="grid grid-2">
+            <div class="callout">
+                <h3>Unreal Engine 5</h3>
+                <p>
+                    Our titles are developed with Unreal Engine 5 under licence from Epic Games, Inc.
+                    Impact Forge LLC is an Unreal Engine licensee and is not affiliated with, endorsed
+                    by, or sponsored by Epic Games, Inc.
+                </p>
+            </div>
+            <div class="callout">
+                <h3>Epic Online Services</h3>
+                <p>
+                    Battlespace integrates Epic Online Services, including Epic Account Services for
+                    Epic Games account sign-in, plus friends and matchmaking features. See the
+                    <a href="{{ '/battlespace.html#online' | relative_url }}">Online Services section</a>
+                    of the game page and our
+                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a> for details.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,10 +1,200 @@
 ---
 layout: default
-title: Battlespace Game
+title: Battlespace
+description: "Battlespace is a team-based tactical first-person shooter for PC, developed and published by Impact Forge LLC and built with Unreal Engine 5. Currently in development."
 ---
-<h1>Battlespace Game</h1>
-<p>Welcome to Battlespace, an exciting strategy game by Impact Forge LLC!</p>
-<div id="game-container">
-    <!-- Game interface will be inserted here by JavaScript -->
-</div>
-<p>Enjoy the game and may the best strategist win!</p>
+
+<section class="page-head">
+    <div class="wrap">
+        <p class="kicker">{{ site.game.type }} &mdash; {{ site.game.status }}</p>
+        <h1>{{ site.game.title }}</h1>
+        <p class="lede">
+            A team-based tactical first-person shooter for PC. Developed and published by
+            {{ site.company.name }}. Built with {{ site.game.engine }}.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="overview">
+    <div class="wrap">
+        <div class="grid grid-2">
+            <div>
+                <p class="kicker">Overview</p>
+                <h2>Hold the line, or lose the map</h2>
+                <p class="lede" style="margin-bottom:1.4rem;">
+                    Battlespace is a multiplayer first-person shooter about coordinated infantry
+                    combat at scale. Two teams contest a contiguous front line across large maps,
+                    capturing and holding objectives while managing limited reinforcements, supply
+                    and vehicle assets.
+                </p>
+                <p>
+                    Players are organised into squads under a squad leader, with a commander
+                    coordinating the wider effort. Voice communication is a core mechanic rather than
+                    an add-on: local proximity chat, squad channels and a command net all carry
+                    different information, and squads that use them well beat squads that do not.
+                </p>
+                <p>
+                    Combat is deliberately unforgiving. Time-to-kill is short, there is no health
+                    regeneration in the field, and a downed player depends on a teammate to revive
+                    them. Suppression, cover, sightlines and the direction you approach from matter
+                    more than raw aim. Winning a fight is usually a question of getting there first
+                    with the right people.
+                </p>
+            </div>
+            <div>
+                <div class="media-frame">
+                    <span>Battlespace</span>
+                    <span>Gameplay Footage &mdash; Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="features">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Features</p>
+            <h2>What you actually play</h2>
+        </div>
+
+        <div class="grid grid-3">
+            <article class="card">
+                <span class="card-index">01</span>
+                <h3>Large-scale infantry combat</h3>
+                <p>{{ site.game.players }} on persistent front lines, fought over open terrain, treelines and built-up areas rather than corridor arenas.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">02</span>
+                <h3>Squad-based command</h3>
+                <p>Players group into squads under a squad leader. Leaders place rally points and forward positions; the commander allocates assets across the map.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">03</span>
+                <h3>Positional voice comms</h3>
+                <p>Proximity, squad and command voice channels. Hearing an enemy squad through a wall is as useful as seeing them.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">04</span>
+                <h3>Logistics and supply</h3>
+                <p>Ammunition, construction and fortifications are hauled forward by players. A cut supply line loses ground without a shot fired.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">05</span>
+                <h3>Combined arms</h3>
+                <p>Light vehicles, transports and crew-served weapons support infantry. Armour without infantry cover does not last long.</p>
+            </article>
+            <article class="card">
+                <span class="card-index">06</span>
+                <h3>Role loadouts</h3>
+                <p>Rifleman, medic, automatic rifleman, marksman, engineer and anti-tank roles, limited per squad so team composition is a real decision.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="details">
+    <div class="wrap">
+        <div class="grid grid-2">
+            <div>
+                <p class="kicker">Product Details</p>
+                <h2>Fact sheet</h2>
+                <p style="margin-top:1rem;color:var(--text-dim);">
+                    Battlespace is interactive entertainment software &mdash; a video game played on a
+                    personal computer. It is not a utility, productivity or non-game application.
+                </p>
+            </div>
+            <div>
+                <dl class="spec">
+                    <div><dt>Title</dt><dd>{{ site.game.title }}</dd></div>
+                    <div><dt>Product Type</dt><dd>{{ site.game.type }} (interactive entertainment software)</dd></div>
+                    <div><dt>Genre</dt><dd>{{ site.game.genre }}</dd></div>
+                    <div><dt>Game Modes</dt><dd>{{ site.game.modes }}</dd></div>
+                    <div><dt>Player Count</dt><dd>{{ site.game.players }}</dd></div>
+                    <div><dt>Developer</dt><dd>{{ site.game.developer }}</dd></div>
+                    <div><dt>Publisher</dt><dd>{{ site.game.publisher }}</dd></div>
+                    <div><dt>Engine</dt><dd>{{ site.game.engine }}</dd></div>
+                    <div><dt>Platform</dt><dd>{{ site.game.platforms }}</dd></div>
+                    <div><dt>Development Status</dt><dd>{{ site.game.status }}</dd></div>
+                    <div><dt>Release Date</dt><dd>{{ site.game.release }}</dd></div>
+                    <div><dt>Content Rating</dt><dd>{{ site.game.rating }}</dd></div>
+                    <div><dt>Age Guidance</dt><dd>Intended for players aged 13 and over. Contains realistic violence in a military setting.</dd></div>
+                    <div><dt>Languages</dt><dd>English (additional languages under evaluation)</dd></div>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="online">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Online Services</p>
+            <h2>Accounts, sign-in and multiplayer</h2>
+            <p class="lede">
+                Battlespace is an online multiplayer game and requires an internet connection to play.
+            </p>
+        </div>
+
+        <div class="grid grid-2">
+            <div>
+                <h3 style="margin-bottom:1rem;">Epic Account Services</h3>
+                <ul class="tick-list">
+                    <li><strong>Sign in with Epic:</strong> players may authenticate using an Epic Games account through Epic Account Services.</li>
+                    <li><strong>What we receive:</strong> your Epic account ID, display name, and &mdash; only where you consent &mdash; your email address and Epic friends list.</li>
+                    <li><strong>What we use it for:</strong> creating and identifying your Battlespace player profile, matchmaking, cross-platform friends, and player support.</li>
+                    <li><strong>Your control:</strong> consent is requested in-game and can be withdrawn at any time through your Epic Games account settings.</li>
+                    <li><strong>Data controller:</strong> {{ site.company.name }} is the controller for the Battlespace player data described in our <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="margin-bottom:1rem;">Other online features</h3>
+                <ul class="tick-list">
+                    <li><strong>Dedicated servers:</strong> matches run on servers operated by or on behalf of {{ site.company.name }}.</li>
+                    <li><strong>Matchmaking and lobbies:</strong> provided through Epic Online Services.</li>
+                    <li><strong>Voice communication:</strong> in-game voice between players in the same match.</li>
+                    <li><strong>Reporting and moderation:</strong> in-game reporting for disruptive behaviour, reviewed under our <a href="{{ '/terms-of-service.html' | relative_url }}">Terms of Service</a>.</li>
+                    <li><strong>Updates:</strong> the game receives content and stability updates during development.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="callout callout--legal" style="margin-top:2.5rem;">
+            <h3>Legal notices for this title</h3>
+            <p style="margin-bottom:0.7rem;">
+                {{ site.game.title }} is developed and published by {{ site.company.name }}.
+                &copy; {{ 'now' | date: "%Y" }} {{ site.company.name }}. All rights reserved.
+                {{ site.game.title }} is a trademark of {{ site.company.name }}.
+            </p>
+            <p style="margin-bottom:0.7rem;">
+                Your use of {{ site.game.title }} is governed by our
+                <a href="{{ '/eula.html' | relative_url }}">End User Licence Agreement</a> and
+                <a href="{{ '/terms-of-service.html' | relative_url }}">Terms of Service</a>, and your
+                personal information is handled as described in our
+                <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>.
+            </p>
+            <p>
+                Unreal&reg; Engine, Copyright 1998 &ndash; {{ 'now' | date: "%Y" }}, Epic Games, Inc.
+                All rights reserved. Unreal&reg; is a trademark or registered trademark of Epic Games,
+                Inc. in the United States of America and elsewhere.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="follow">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Stay Informed</p>
+            <h2>Development updates</h2>
+            <p class="lede">
+                Battlespace is in active development. For release information, playtest announcements
+                or press materials, contact the studio directly.
+            </p>
+        </div>
+        <div class="hero-actions">
+            <a class="btn btn--primary" href="mailto:{{ site.company.email }}">Email {{ site.company.short_name }}</a>
+            <a class="btn btn--ghost" href="{{ '/press.html' | relative_url }}">Press &amp; Fact Sheet</a>
+        </div>
+    </div>
+</section>

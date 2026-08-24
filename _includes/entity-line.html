@@ -1,0 +1,5 @@
+{%- if site.company.jurisdiction and site.company.jurisdiction != "" -%}
+{{ site.company.name }} is a {{ site.company.entity_type }} registered in the State of {{ site.company.jurisdiction }}, {{ site.company.country }}.
+{%- else -%}
+{{ site.company.name }} is a {{ site.company.entity_type }} registered in the {{ site.company.country }}.
+{%- endif -%}

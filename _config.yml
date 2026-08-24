@@ -1,7 +1,47 @@
-title: Impact Studios Dev
-description: "Game development studio creating immersive gaming experiences with Unreal Engine"
-url: "" # Will be set by Cloudflare Pages
+title: "Impact Forge LLC"
+tagline: "Independent Game Developer & Publisher"
+description: "Impact Forge LLC is an independent video game developer and publisher. We develop and publish Battlespace, a team-based tactical first-person shooter built with Unreal Engine."
+url: "https://battlespace.dev"
 baseurl: ""
+lang: "en-US"
+locale: "en_US"
+
+# ---------------------------------------------------------------------------
+# Publisher / legal entity details.
+# These drive the site header, footer, About page, press kit and legal pages,
+# and are what Epic Account Services brand review looks for on the domain.
+# ---------------------------------------------------------------------------
+company:
+  name: "Impact Forge LLC"
+  short_name: "Impact Forge"
+  entity_type: "Limited Liability Company"
+  jurisdiction: "Minnesota"
+  country: "United States"
+  role: "Developer and Publisher"
+  founded: "2020"
+  email: "contact@battlespace.dev"
+  support_email: "support@battlespace.dev"
+  privacy_email: "privacy@battlespace.dev"
+  legal_email: "legal@battlespace.dev"
+  press_email: "press@battlespace.dev"
+
+# ---------------------------------------------------------------------------
+# Product details. Epic brand review requires the domain to carry the name and
+# an overview of the product, and to make clear that the product is a game.
+# ---------------------------------------------------------------------------
+game:
+  title: "Battlespace"
+  type: "Video game"
+  genre: "Team-based tactical first-person shooter"
+  modes: "Online multiplayer"
+  developer: "Impact Forge LLC"
+  publisher: "Impact Forge LLC"
+  engine: "Unreal Engine 5"
+  platforms: "PC (Windows)"
+  status: "In Development"
+  release: "To be announced"
+  rating: "Not yet rated"
+  players: "Up to 100 players per match"
 
 # Build settings
 markdown: kramdown
@@ -9,7 +49,6 @@ sass:
   sass_dir: assets/css
   style: compressed
 
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock

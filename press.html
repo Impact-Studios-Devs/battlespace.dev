@@ -1,0 +1,131 @@
+---
+layout: default
+title: Press
+description: "Press information and fact sheet for Impact Forge LLC, independent developer and publisher of Battlespace, a tactical first-person shooter built with Unreal Engine 5."
+---
+
+<section class="page-head">
+    <div class="wrap">
+        <p class="kicker">Press</p>
+        <h1>Press &amp; Fact Sheet</h1>
+        <p class="lede">
+            Company and product information for press, storefronts, platform partners and
+            verification reviewers.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="company-facts">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Company</p>
+            <h2>{{ site.company.name }}</h2>
+        </div>
+        <dl class="spec">
+            <div><dt>Legal Name</dt><dd>{{ site.company.name }}</dd></div>
+            <div><dt>Trading Name</dt><dd>{{ site.company.short_name }}</dd></div>
+            <div><dt>Entity Type</dt><dd>{{ site.company.entity_type }}{% if site.company.jurisdiction and site.company.jurisdiction != "" %}, registered in the State of {{ site.company.jurisdiction }}{% endif %}</dd></div>
+            <div><dt>Country of Registration</dt><dd>{{ site.company.country }}</dd></div>
+            <div><dt>Founded</dt><dd>{{ site.company.founded }}</dd></div>
+            <div><dt>Business</dt><dd>Video game development and publishing</dd></div>
+            <div><dt>Role on Current Title</dt><dd>Developer and publisher of {{ site.game.title }}</dd></div>
+            <div><dt>Official Website</dt><dd><a href="{{ site.url }}/">{{ site.url }}</a></dd></div>
+            <div><dt>Press Contact</dt><dd><a href="mailto:{{ site.company.press_email }}">{{ site.company.press_email }}</a></dd></div>
+            <div><dt>Business Contact</dt><dd><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section section--alt" id="product-facts">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Product</p>
+            <h2>{{ site.game.title }}</h2>
+        </div>
+        <dl class="spec">
+            <div><dt>Title</dt><dd>{{ site.game.title }}</dd></div>
+            <div><dt>Product Type</dt><dd>{{ site.game.type }} (interactive entertainment software)</dd></div>
+            <div><dt>Genre</dt><dd>{{ site.game.genre }}</dd></div>
+            <div><dt>Game Modes</dt><dd>{{ site.game.modes }}</dd></div>
+            <div><dt>Player Count</dt><dd>{{ site.game.players }}</dd></div>
+            <div><dt>Developer</dt><dd>{{ site.game.developer }}</dd></div>
+            <div><dt>Publisher</dt><dd>{{ site.game.publisher }}</dd></div>
+            <div><dt>Engine</dt><dd>{{ site.game.engine }}</dd></div>
+            <div><dt>Platform</dt><dd>{{ site.game.platforms }}</dd></div>
+            <div><dt>Status</dt><dd>{{ site.game.status }}</dd></div>
+            <div><dt>Release Date</dt><dd>{{ site.game.release }}</dd></div>
+            <div><dt>Content Rating</dt><dd>{{ site.game.rating }}</dd></div>
+            <div><dt>Online Services</dt><dd>Epic Online Services, including Epic Account Services sign-in</dd></div>
+            <div><dt>Product Page</dt><dd><a href="{{ '/battlespace.html' | relative_url }}">{{ site.url }}/battlespace.html</a></dd></div>
+        </dl>
+    </div>
+</section>
+
+<section class="section" id="boilerplate">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Boilerplate</p>
+            <h2>Approved descriptions</h2>
+            <p class="lede">
+                The following text may be reproduced without alteration in coverage of the studio or
+                the game.
+            </p>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="callout">
+                <h3>About Impact Forge LLC</h3>
+                <p>
+                    Impact Forge LLC is an independent video game developer and publisher
+                    {% if site.company.jurisdiction and site.company.jurisdiction != "" %}registered in the State of {{ site.company.jurisdiction }}, {{ site.company.country }}{% else %}registered in the {{ site.company.country }}{% endif %}.
+                    Founded in {{ site.company.founded }}, the studio develops and self-publishes
+                    Battlespace, a team-based tactical first-person shooter built with Unreal Engine 5.
+                </p>
+            </div>
+            <div class="callout">
+                <h3>About Battlespace</h3>
+                <p>
+                    Battlespace is a team-based tactical first-person shooter for PC in which squads
+                    contest large-scale maps through communication, positioning and combined-arms
+                    coordination. Developed and published by Impact Forge LLC and built with Unreal
+                    Engine 5, Battlespace is currently in development.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="assets">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Media</p>
+            <h2>Screenshots and logos</h2>
+            <p class="lede">
+                A downloadable press kit with logos, key art and screenshots is in preparation. Until
+                it is published, contact <a href="mailto:{{ site.company.press_email }}">{{ site.company.press_email }}</a>
+                and we will supply assets directly.
+            </p>
+        </div>
+        <div class="grid grid-3">
+            <div class="media-frame"><span>Key Art</span><span>Coming Soon</span></div>
+            <div class="media-frame"><span>Screenshots</span><span>Coming Soon</span></div>
+            <div class="media-frame"><span>Logo Pack</span><span>Coming Soon</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="usage">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Terms of Use</p>
+            <h2>Using our marks and materials</h2>
+        </div>
+        <ul class="tick-list" style="max-width:75ch;">
+            <li><strong>Editorial use is granted.</strong> Journalists, content creators and storefronts may use screenshots, trailers and logos supplied by us to cover Battlespace and Impact Forge LLC.</li>
+            <li><strong>Do not alter our marks.</strong> The Impact Forge and Battlespace logos must not be recoloured, distorted, or combined with other marks.</li>
+            <li><strong>Do not imply endorsement.</strong> Our marks may not be used in a way suggesting Impact Forge LLC sponsors or endorses a product, service or channel without written permission.</li>
+            <li><strong>Monetised video is permitted.</strong> You may monetise video and streamed content featuring Battlespace, subject to our <a href="{{ '/eula.html' | relative_url }}">End User Licence Agreement</a>.</li>
+            <li><strong>Questions.</strong> Anything not covered here: <a href="mailto:{{ site.company.legal_email }}">{{ site.company.legal_email }}</a>.</li>
+        </ul>
+    </div>
+</section>
