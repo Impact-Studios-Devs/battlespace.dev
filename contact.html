@@ -1,24 +1,78 @@
 ---
 layout: default
 title: Contact
+description: "Contact Impact Forge LLC — business, press, player support, privacy and legal enquiries for the developer and publisher of Battlespace."
 ---
-<h1>Contact Us</h1>
-<p>We'd love to hear from you! Get in touch with Impact Forge LLC:</p>
-<ul>
-    <li>Email: info@impactforge.com</li>
-    <li>Phone: (555) 123-4567</li>
-    <li>Address: 123 Impact Street, Innovation City, IF 12345</li>
-</ul>
-<h2>Contact Form</h2>
-<form id="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+<section class="page-head">
+    <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Contact the Studio</h1>
+        <p class="lede">
+            Every address below reaches {{ site.company.name }} directly. We aim to respond to all
+            enquiries within five business days.
+        </p>
+    </div>
+</section>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
+<section class="section" id="channels">
+    <div class="wrap">
+        <div class="grid grid-2">
+            <div>
+                <p class="kicker">Reach Us</p>
+                <h2>Enquiries</h2>
+                <ul class="contact-list" style="margin-top:1.75rem;">
+                    <li>
+                        <span class="label">General &amp; Business</span>
+                        <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
+                        <span class="hint">Partnerships, storefronts, platform and publishing enquiries.</span>
+                    </li>
+                    <li>
+                        <span class="label">Player Support</span>
+                        <a href="mailto:{{ site.company.support_email }}">{{ site.company.support_email }}</a>
+                        <span class="hint">Technical issues, account problems and in-game reports for {{ site.game.title }}.</span>
+                    </li>
+                    <li>
+                        <span class="label">Press &amp; Content Creators</span>
+                        <a href="mailto:{{ site.company.press_email }}">{{ site.company.press_email }}</a>
+                        <span class="hint">Review access, interviews and press assets. See also our <a href="{{ '/press.html' | relative_url }}">fact sheet</a>.</span>
+                    </li>
+                    <li>
+                        <span class="label">Privacy &amp; Data Requests</span>
+                        <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>
+                        <span class="hint">Access, correction, deletion and other rights under our <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>.</span>
+                    </li>
+                    <li>
+                        <span class="label">Legal &amp; Intellectual Property</span>
+                        <a href="mailto:{{ site.company.legal_email }}">{{ site.company.legal_email }}</a>
+                        <span class="hint">Licensing, trademark, copyright and DMCA notices.</span>
+                    </li>
+                </ul>
+            </div>
 
-    <button type="submit">Send</button>
-</form>
+            <div>
+                <p class="kicker">Company Details</p>
+                <h2>{{ site.company.name }}</h2>
+                <dl class="spec" style="margin-top:1.75rem;">
+                    <div><dt>Legal Entity</dt><dd>{{ site.company.name }}</dd></div>
+                    <div><dt>Entity Type</dt><dd>{{ site.company.entity_type }}{% if site.company.jurisdiction and site.company.jurisdiction != "" %}, State of {{ site.company.jurisdiction }}{% endif %}</dd></div>
+                    <div><dt>Country</dt><dd>{{ site.company.country }}</dd></div>
+                    <div><dt>Business</dt><dd>Video game {{ site.company.role | downcase }}</dd></div>
+                    <div><dt>Official Website</dt><dd><a href="{{ site.url }}/">{{ site.url }}</a></dd></div>
+                    <div><dt>Response Time</dt><dd>Within five business days</dd></div>
+                    <div><dt>Correspondence</dt><dd>English</dd></div>
+                </dl>
+
+                <div class="callout" style="margin-top:1.75rem;">
+                    <h3>Postal correspondence</h3>
+                    <p>
+                        We do not publish a street address. If you need to serve formal notice or send
+                        physical correspondence to {{ site.company.name }}, email
+                        <a href="mailto:{{ site.company.legal_email }}">{{ site.company.legal_email }}</a>
+                        and we will provide our registered mailing address.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

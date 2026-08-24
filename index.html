@@ -1,11 +1,173 @@
 ---
 layout: default
-title: Home
+title: null
+description: "Impact Forge LLC is an independent video game developer and publisher based in the United States. We develop and publish Battlespace, a team-based tactical first-person shooter built with Unreal Engine 5 for PC."
 ---
-<h1>Welcome to Impact Forge LLC</h1>
-<p>We are dedicated to forging impactful solutions for a better tomorrow.</p>
-<div class="cta-buttons">
-    <a href="{{ '/about.html' | relative_url }}" class="button">Learn more about us</a>
-    <a href="{{ '/battlespace.html' | relative_url }}" class="button">Play Battlespace</a>
-    <a href="{{ '/contact.html' | relative_url }}" class="button">Contact us</a>
-</div>
+
+<section class="hero">
+    <div class="wrap hero-inner">
+        <p class="hero-eyebrow"><span class="dot"></span> Independent Video Game Developer &amp; Publisher</p>
+
+        <h1>Impact Forge <span class="accent">LLC</span></h1>
+
+        <p class="hero-lede">
+            Impact Forge LLC is an independent video game studio. We are the developer
+            <strong>and</strong> the publisher of <strong>Battlespace</strong>, a team-based tactical
+            first-person shooter built with Unreal Engine 5 for PC.
+        </p>
+
+        <div class="hero-actions">
+            <a class="btn btn--primary" href="{{ '/battlespace.html' | relative_url }}">View Battlespace</a>
+            <a class="btn btn--ghost" href="{{ '/about.html' | relative_url }}">About the Studio</a>
+        </div>
+
+        <dl class="hero-meta">
+            <div>
+                <dt>Studio</dt>
+                <dd>{{ site.company.name }}</dd>
+            </div>
+            <div>
+                <dt>Role</dt>
+                <dd>{{ site.company.role }}</dd>
+            </div>
+            <div>
+                <dt>Product</dt>
+                <dd>{{ site.game.title }} &mdash; {{ site.game.type }}</dd>
+            </div>
+            <div>
+                <dt>Platform</dt>
+                <dd>{{ site.game.platforms }}</dd>
+            </div>
+            <div>
+                <dt>Engine</dt>
+                <dd>{{ site.game.engine }}</dd>
+            </div>
+        </dl>
+    </div>
+</section>
+
+<section class="section" id="studio">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Who We Are</p>
+            <h2>An independent studio that ships its own games</h2>
+            <p class="lede">
+                {% include entity-line.html %} Founded in {{ site.company.founded }}, we handle every
+                stage of our titles in-house &mdash; design, engineering, art, live operations, player
+                support and publishing. There is no third-party publisher between us and our players.
+            </p>
+        </div>
+
+        <div class="grid grid-3">
+            <article class="card">
+                <span class="card-index">01 &mdash; Developer</span>
+                <h3>We build the game</h3>
+                <p>
+                    Battlespace is developed in-house by Impact Forge LLC using Unreal Engine 5.
+                    Gameplay systems, networking, art and audio are all produced by our own team.
+                </p>
+            </article>
+            <article class="card">
+                <span class="card-index">02 &mdash; Publisher</span>
+                <h3>We publish the game</h3>
+                <p>
+                    Impact Forge LLC is also the publisher of record for Battlespace. We own the
+                    intellectual property, hold the store relationships, and are the party responsible
+                    for distribution, pricing and player-facing terms.
+                </p>
+            </article>
+            <article class="card">
+                <span class="card-index">03 &mdash; Operator</span>
+                <h3>We run the services</h3>
+                <p>
+                    We operate the online services behind Battlespace, including account sign-in,
+                    matchmaking and player support, and we are the data controller for the personal
+                    information those services process.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="game">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Our Game</p>
+            <h2>{{ site.game.title }}</h2>
+            <p class="lede">
+                A team-based tactical first-person shooter for PC. Squads of players contest a shared
+                battlespace across large-scale maps, where communication, positioning and combined-arms
+                coordination decide the outcome far more often than raw reflexes do.
+            </p>
+        </div>
+
+        <div class="grid grid-2">
+            <div>
+                <div class="media-frame">
+                    <span>Battlespace</span>
+                    <span>In-Game Capture &mdash; Coming Soon</span>
+                </div>
+            </div>
+            <div>
+                <dl class="spec">
+                    <div><dt>Title</dt><dd>{{ site.game.title }}</dd></div>
+                    <div><dt>Product Type</dt><dd>{{ site.game.type }} (interactive entertainment software)</dd></div>
+                    <div><dt>Genre</dt><dd>{{ site.game.genre }}</dd></div>
+                    <div><dt>Developer</dt><dd>{{ site.game.developer }}</dd></div>
+                    <div><dt>Publisher</dt><dd>{{ site.game.publisher }}</dd></div>
+                    <div><dt>Engine</dt><dd>{{ site.game.engine }}</dd></div>
+                    <div><dt>Platform</dt><dd>{{ site.game.platforms }}</dd></div>
+                    <div><dt>Status</dt><dd>{{ site.game.status }}</dd></div>
+                </dl>
+                <p style="margin-top:1.5rem;">
+                    <a class="btn btn--primary" href="{{ '/battlespace.html' | relative_url }}">Full Game Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Technology &amp; Online Services</p>
+            <h2>Built on Unreal Engine, signed in with Epic Account Services</h2>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="callout">
+                <h3>Unreal Engine 5</h3>
+                <p>
+                    Battlespace is developed with Unreal Engine 5 under a licence from Epic Games, Inc.
+                    Impact Forge LLC is an Unreal Engine licensee; we are not affiliated with, endorsed
+                    by, or sponsored by Epic Games, Inc.
+                </p>
+            </div>
+            <div class="callout">
+                <h3>Epic Online Services</h3>
+                <p>
+                    Battlespace uses Epic Online Services, including Epic Account Services, to let
+                    players sign in with an Epic Games account and to support cross-platform friends and
+                    matchmaking. What that means for your data is set out in our
+                    <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="contact">
+    <div class="wrap">
+        <div class="section-head">
+            <p class="kicker">Get In Touch</p>
+            <h2>Contact Impact Forge LLC</h2>
+            <p class="lede">
+                Business, press and player support enquiries all reach a real person at the studio.
+            </p>
+        </div>
+        <div class="hero-actions">
+            <a class="btn btn--primary" href="{{ '/contact.html' | relative_url }}">Contact Details</a>
+            <a class="btn btn--ghost" href="{{ '/press.html' | relative_url }}">Press &amp; Fact Sheet</a>
+        </div>
+    </div>
+</section>

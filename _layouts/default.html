@@ -1,39 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.company.name }}{% unless page.title %} &middot; {{ site.tagline }}{% endunless %}</title>
+
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.company.name }}">
+    <meta name="publisher" content="{{ site.company.name }}">
+    <meta name="theme-color" content="#0a0b0c">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.company.name }}">
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.company.name }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{ site.url }}/#organization",
+          "name": "{{ site.company.name }}",
+          "alternateName": "{{ site.company.short_name }}",
+          "url": "{{ site.url }}/",
+          "description": "{{ site.description }}",
+          "foundingDate": "{{ site.company.founded }}",
+          "email": "{{ site.company.email }}",
+          "address": { "@type": "PostalAddress", "addressCountry": "US" },
+          "contactPoint": [
+            { "@type": "ContactPoint", "contactType": "customer support", "email": "{{ site.company.support_email }}" },
+            { "@type": "ContactPoint", "contactType": "press", "email": "{{ site.company.press_email }}" }
+          ]
+        },
+        {
+          "@type": "VideoGame",
+          "@id": "{{ site.url }}/battlespace.html#game",
+          "name": "{{ site.game.title }}",
+          "url": "{{ site.url }}/battlespace.html",
+          "genre": "{{ site.game.genre }}",
+          "gamePlatform": "{{ site.game.platforms }}",
+          "playMode": "MultiPlayer",
+          "applicationCategory": "Game",
+          "author": { "@id": "{{ site.url }}/#organization" },
+          "publisher": { "@id": "{{ site.url }}/#organization" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <path d="M16 2 L29 9 L29 21 L16 30 L3 21 L3 9 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M16 9 L23 13 L23 19 L16 23 L9 19 L9 13 Z" fill="currentColor" opacity="0.85"/>
+            </svg>
+            <span class="brand-text">
+                <span class="brand-name">Impact Forge<span class="brand-suffix">LLC</span></span>
+                <span class="brand-sub">Developer &amp; Publisher</span>
+            </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-                <li><a href="{{ '/battlespace.html' | relative_url }}">Battlespace</a></li>
-                <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-                <li><a href="{{ '/privacy-policy.html' | relative_url }}">Privacy</a></li>
-                <li><a href="{{ '/terms-of-service.html' | relative_url }}">Terms</a></li>
-                <li><a href="{{ '/eula.html' | relative_url }}">EULA</a></li>
+                <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active" aria-current="page"{% endif %}>Home</a></li>
+                <li><a href="{{ '/battlespace.html' | relative_url }}"{% if page.url contains 'battlespace' %} class="is-active" aria-current="page"{% endif %}>Battlespace</a></li>
+                <li><a href="{{ '/about.html' | relative_url }}"{% if page.url contains 'about' %} class="is-active" aria-current="page"{% endif %}>Studio</a></li>
+                <li><a href="{{ '/press.html' | relative_url }}"{% if page.url contains 'press' %} class="is-active" aria-current="page"{% endif %}>Press</a></li>
+                <li><a href="{{ '/contact.html' | relative_url }}"{% if page.url contains 'contact' %} class="is-active" aria-current="page"{% endif %}>Contact</a></li>
+                <li><a class="nav-legal" href="{{ '/privacy-policy.html' | relative_url }}"{% if page.url contains 'privacy' %} class="is-active" aria-current="page"{% endif %}>Legal</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        {{ content }}
-    </main>
+<main id="main">
+    {{ content }}
+</main>
 
-    <footer>
-        <p>&copy; 2025 Impact Forge LLC. All rights reserved.</p>
-        <p>
-            <a href="{{ '/privacy-policy.html' | relative_url }}" style="color: #eaeaea; margin: 0 0.5rem;">Privacy Policy</a> |
-            <a href="{{ '/terms-of-service.html' | relative_url }}" style="color: #eaeaea; margin: 0 0.5rem;">Terms of Service</a> |
-            <a href="{{ '/eula.html' | relative_url }}" style="color: #eaeaea; margin: 0 0.5rem;">EULA</a>
-        </p>
-    </footer>
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div class="footer-identity">
+                <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                    <path d="M16 2 L29 9 L29 21 L16 30 L3 21 L3 9 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M16 9 L23 13 L23 19 L16 23 L9 19 L9 13 Z" fill="currentColor" opacity="0.85"/>
+                </svg>
+                <p class="footer-company">{{ site.company.name }}</p>
+                <p class="footer-role">Independent video game {{ site.company.role | downcase }}</p>
+                <p class="footer-note">{% include entity-line.html %} Founded {{ site.company.founded }}.</p>
+                <p class="footer-note">General enquiries: <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
+            </div>
 
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+            <div class="footer-col">
+                <h2>Game</h2>
+                <ul>
+                    <li><a href="{{ '/battlespace.html' | relative_url }}">{{ site.game.title }}</a></li>
+                    <li><a href="{{ '/battlespace.html#overview' | relative_url }}">Overview</a></li>
+                    <li><a href="{{ '/battlespace.html#features' | relative_url }}">Features</a></li>
+                    <li><a href="{{ '/battlespace.html#online' | relative_url }}">Online Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2>Studio</h2>
+                <ul>
+                    <li><a href="{{ '/about.html' | relative_url }}">About Impact Forge</a></li>
+                    <li><a href="{{ '/press.html' | relative_url }}">Press &amp; Fact Sheet</a></li>
+                    <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+                    <li><a href="mailto:{{ site.company.support_email }}">Player Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a></li>
+                    <li><a href="{{ '/terms-of-service.html' | relative_url }}">Terms of Service</a></li>
+                    <li><a href="{{ '/eula.html' | relative_url }}">End User Licence Agreement</a></li>
+                    <li><a href="mailto:{{ site.company.privacy_email }}">Privacy Requests</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            {% include legal-notice.html %}
+        </div>
+    </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

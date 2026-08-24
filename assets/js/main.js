@@ -1,17 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Contact form submission
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message. We will get back to you soon!');
-            contactForm.reset();
-        });
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
 
-    // Battlespace game placeholder
-    const gameContainer = document.getElementById('game-container');
-    if (gameContainer) {
-        gameContainer.innerHTML = '<p>Game interface coming soon!</p>';
+    if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Collapse the mobile menu once a destination is chosen.
+        nav.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A' && nav.classList.contains('is-open')) {
+                nav.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
 });

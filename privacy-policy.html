@@ -1,273 +1,562 @@
 ---
 layout: default
 title: Privacy Policy
+description: "Privacy Policy for Impact Forge LLC, developer and publisher of Battlespace — what personal data we collect, our legal bases for processing it, how Epic Account Services is used, and your privacy rights."
 ---
+<div class="wrap">
 <div class="legal-content">
+
 <h1>Privacy Policy</h1>
-<p class="effective-date">Effective Date: November 19, 2025</p>
-<p class="effective-date">Last Updated: August 18, 2026</p>
+<p class="effective-date">Effective Date: 19 November 2025</p>
+<p class="effective-date">Last Updated: 24 August 2026</p>
 
-<p>At Impact Forge LLC ("we," "us," or "our"), we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our games (including Battlespace), websites, and related services (collectively, the "Services").</p>
+<div class="legal-summary">
+    <p style="margin-bottom:0.8rem;"><strong>The short version.</strong> {{ site.company.name }} is the developer and publisher of {{ site.game.title }}, and we are the controller of the personal data described here. We collect the account, device and gameplay data our games and services need in order to run, to be supported, and to stay fair and secure.</p>
+    <p style="margin-bottom:0.8rem;">If you choose to sign in with an Epic Games account, we receive a limited set of information from Epic Account Services &mdash; your Epic account ID and display name, and, only where you give consent, your email address and Epic friends list. You can withdraw that consent at any time.</p>
+    <p><strong>We do not sell your personal data, and we do not share it for cross-context behavioural advertising.</strong> The full detail is below.</p>
+</div>
 
-<p><strong>Summary:</strong> We collect information you provide directly (account details, contact info, payment data via processors), information collected automatically (device, gameplay, and log data), and information from third parties like Epic Games and analytics providers. We use this data to operate and improve our Services, support your account, and communicate with you. We share data only with service providers, Epic Games/Unreal Engine, and as required by law — we do not sell your personal information. Retention periods vary by data type and are detailed in Section 4 below. Full details follow.</p>
+<div class="legal-toc">
+    <h2>Contents</h2>
+    <ol>
+        <li><a href="#s1">Who we are and how to contact us</a></li>
+        <li><a href="#s2">Scope of this policy</a></li>
+        <li><a href="#s3">Age requirements and children's privacy</a></li>
+        <li><a href="#s4">Personal data we collect</a></li>
+        <li><a href="#s5">How we use your data and our legal bases</a></li>
+        <li><a href="#s6">Epic Games, Epic Account Services and Unreal Engine</a></li>
+        <li><a href="#s7">Who we share your data with</a></li>
+        <li><a href="#s8">Marketing and your choices</a></li>
+        <li><a href="#s9">Cookies and similar technologies</a></li>
+        <li><a href="#s10">How long we keep your data</a></li>
+        <li><a href="#s11">International data transfers</a></li>
+        <li><a href="#s12">How we protect your data</a></li>
+        <li><a href="#s13">Your privacy rights</a></li>
+        <li><a href="#s14">Additional disclosures for United States residents</a></li>
+        <li><a href="#s15">Additional disclosures for other regions</a></li>
+        <li><a href="#s16">Third-party services and links</a></li>
+        <li><a href="#s17">Changes to this policy</a></li>
+        <li><a href="#s18">How to complain</a></li>
+    </ol>
+</div>
 
-<p>Please read this Privacy Policy carefully. By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by all the terms of this Privacy Policy and our Terms of Service. If you do not agree with these terms, please discontinue use of our Services immediately.</p>
+<h2 id="s1">1. Who we are and how to contact us</h2>
 
-<h2>1. Information We Collect</h2>
+<p>This Privacy Policy explains how <strong>{{ site.company.name }}</strong> ("Impact Forge", "we", "us" or "our") collects, uses, shares and protects personal data. {% include entity-line.html %} We are an independent video game developer and publisher, and we are the developer and publisher of <strong>{{ site.game.title }}</strong>.</p>
 
-<h3>1.1 Information You Provide Directly</h3>
-<p>We collect information that you voluntarily provide to us, including:</p>
+<p>For the purposes of the UK and EU General Data Protection Regulation ("GDPR") and equivalent laws, {{ site.company.name }} is the <strong>data controller</strong> of the personal data described in this policy. That means we decide why and how your personal data is processed, and we are accountable for it.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <tr><th>Controller</th><td>{{ site.company.name }}</td></tr>
+    <tr><th>Entity type</th><td>{{ site.company.entity_type }}{% if site.company.jurisdiction and site.company.jurisdiction != "" %}, registered in the State of {{ site.company.jurisdiction }}{% endif %}, {{ site.company.country }}</td></tr>
+    <tr><th>Official website</th><td><a href="{{ site.url }}/">{{ site.url }}</a></td></tr>
+    <tr><th>Privacy contact</th><td><a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a></td></tr>
+    <tr><th>General contact</th><td><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></td></tr>
+    <tr><th>Postal address</th><td>We do not publish a street address. Email <a href="mailto:{{ site.company.legal_email }}">{{ site.company.legal_email }}</a> and we will provide our registered mailing address for formal correspondence.</td></tr>
+</table>
+</div>
+
+<p>We are not currently required to appoint a Data Protection Officer. Privacy enquiries are handled by the studio directly at the address above.</p>
+
+<h2 id="s2">2. Scope of this policy</h2>
+
+<p>This policy applies to personal data we process in connection with:</p>
 <ul>
-    <li><strong>Account Information:</strong> Username, email address, password, and profile information when you create an account</li>
-    <li><strong>Contact Information:</strong> Name, email address, and message content when you contact us through our contact forms or customer support</li>
-    <li><strong>Payment Information:</strong> Billing information processed by third-party payment processors (we do not directly store credit card information)</li>
-    <li><strong>User-Generated Content:</strong> Any content you create, upload, or share through our Services, including messages, comments, and gameplay data</li>
+    <li>our games, including {{ site.game.title }}, and any playtests, betas or early access builds of them;</li>
+    <li>this website at <a href="{{ site.url }}/">{{ site.url }}</a>;</li>
+    <li>our player support, community and press channels; and</li>
+    <li>our business contacts, applicants and partners.</li>
+</ul>
+<p>We refer to all of these together as the <strong>"Services"</strong>.</p>
+
+<p>This policy does <strong>not</strong> apply to the practices of third parties we do not control &mdash; including Epic Games, Inc., digital storefronts, and platform holders. Those parties process your data under their own privacy policies, and Section 16 explains how to find them.</p>
+
+<h2 id="s3">3. Age requirements and children's privacy</h2>
+
+<p>{{ site.game.title }} is a military-themed first-person shooter containing realistic violence, and it is <strong>not directed at children</strong>.</p>
+
+<h3>3.1 Minimum age</h3>
+<p>You must be at least <strong>13 years old</strong> to create an account or use our Services. Where the law of your country sets a higher minimum age for consent to the processing of personal data by information society services, that higher age applies to you instead. In the EU and EEA the digital consent age is between 13 and 16 depending on the Member State; in the United Kingdom it is 13; in South Korea it is 14.</p>
+
+<p>If you are under the applicable age of digital consent in your country, you may only use our Services with the consent of, and under the supervision of, a parent or legal guardian, and only where that consent has been given in a manner we can verify.</p>
+
+<h3>3.2 Age assurance</h3>
+<p>Where we collect a date of birth or otherwise apply an age gate, we retain the resulting age-status flag rather than the underlying date where we are able to, and we use it only to apply age-appropriate restrictions.</p>
+
+<h3>3.3 If we learn a child has given us data</h3>
+<p>We do not knowingly collect personal data from children below the applicable minimum age. If we become aware that we have done so without the required parental consent, we will delete that data and close the associated account promptly.</p>
+
+<p>If you are a parent or guardian and believe your child has provided personal data to us, contact <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>. We will verify your relationship to the child, tell you what data we hold, and delete it on request. Parents and guardians may also refuse any further collection of their child's data.</p>
+
+<h2 id="s4">4. Personal data we collect</h2>
+
+<p>The categories below describe what we may collect. Not all of it applies to every player &mdash; what we actually hold depends on which features you use.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Category</th><th>What it includes</th><th>Where it comes from</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Account data</strong></td>
+            <td>Player display name, in-game player identifier, account status, entitlements, linked platform or Epic account identifiers, and email address where you provide one.</td>
+            <td>You, and the platform or account service you sign in with.</td>
+        </tr>
+        <tr>
+            <td><strong>Contact data</strong></td>
+            <td>Name or handle, email address, and the contents of messages you send us.</td>
+            <td>You, when you contact support, press or legal.</td>
+        </tr>
+        <tr>
+            <td><strong>Gameplay data</strong></td>
+            <td>Progression, statistics, match history, session length, in-game settings and preferences, achievements, and inventory of virtual items.</td>
+            <td>Generated by the game as you play.</td>
+        </tr>
+        <tr>
+            <td><strong>Technical and device data</strong></td>
+            <td>IP address, device and hardware identifiers, operating system and version, graphics hardware and driver, game build version, and approximate location inferred from IP address at country or region level.</td>
+            <td>Collected automatically by the game client and our servers.</td>
+        </tr>
+        <tr>
+            <td><strong>Diagnostic data</strong></td>
+            <td>Crash reports, error logs, performance telemetry and network quality metrics.</td>
+            <td>Collected automatically, and from your manual bug reports.</td>
+        </tr>
+        <tr>
+            <td><strong>Communications and user content</strong></td>
+            <td>In-game text chat, voice chat where it is recorded for a report, player-chosen names, and any content you submit or upload.</td>
+            <td>You and other players.</td>
+        </tr>
+        <tr>
+            <td><strong>Safety and enforcement data</strong></td>
+            <td>Reports you make or that are made about you, moderation decisions, sanction history, and anti-cheat signals.</td>
+            <td>You, other players, and our systems.</td>
+        </tr>
+        <tr>
+            <td><strong>Transaction data</strong></td>
+            <td>Record of purchases, refunds and entitlements. <strong>We do not receive or store your full payment card number</strong> &mdash; payments are handled by the storefront or payment processor.</td>
+            <td>The storefront or payment processor.</td>
+        </tr>
+        <tr>
+            <td><strong>Marketing data</strong></td>
+            <td>Your subscription status and communication preferences, and whether you opened or clicked a message we sent.</td>
+            <td>You, and our email provider.</td>
+        </tr>
+        <tr>
+            <td><strong>Website data</strong></td>
+            <td>Pages viewed, referring URL, browser type and cookie or local storage identifiers where applicable.</td>
+            <td>Collected automatically when you visit {{ site.url | remove: 'https://' }}.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<h3>4.1 Data we do not collect</h3>
+<p>We do not intentionally collect special category data (such as data revealing racial or ethnic origin, political opinions, religious beliefs, trade union membership, health, sex life or sexual orientation), biometric data, precise geolocation, or government identifiers. Please do not send us this kind of information; if you do, we will delete it.</p>
+
+<h3>4.2 Providing data is your choice</h3>
+<p>Some data is necessary to provide the Services &mdash; without an account identifier we cannot run a multiplayer session for you. Other data is optional, and the policy makes clear below where that is the case. You are never required to give us optional data in order to play.</p>
+
+<h2 id="s5">5. How we use your data and our legal bases</h2>
+
+<p>Under the GDPR and similar laws, we must have a lawful basis for each purpose for which we process your personal data. The table below sets out each purpose, the data involved, and the basis we rely on.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Purpose</th><th>Data used</th><th>Legal basis</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Creating and maintaining your player account and profile</td>
+            <td>Account data, technical data</td>
+            <td><strong>Performance of a contract</strong> &mdash; providing the game you have obtained under our EULA.</td>
+        </tr>
+        <tr>
+            <td>Running matches, matchmaking, servers and multiplayer sessions</td>
+            <td>Account data, gameplay data, technical data</td>
+            <td><strong>Performance of a contract.</strong></td>
+        </tr>
+        <tr>
+            <td>Saving your progression, settings and entitlements</td>
+            <td>Gameplay data, transaction data</td>
+            <td><strong>Performance of a contract.</strong></td>
+        </tr>
+        <tr>
+            <td>Providing player support and answering your enquiries</td>
+            <td>Contact data, account data, diagnostic data</td>
+            <td><strong>Performance of a contract</strong>, and our <strong>legitimate interest</strong> in supporting our players.</td>
+        </tr>
+        <tr>
+            <td>Detecting and preventing cheating, fraud, exploits and abuse</td>
+            <td>Technical data, gameplay data, safety data</td>
+            <td><strong>Legitimate interest</strong> &mdash; keeping the game fair, secure and playable for everyone.</td>
+        </tr>
+        <tr>
+            <td>Moderating conduct and enforcing our Terms of Service and EULA</td>
+            <td>Communications, safety data, account data</td>
+            <td><strong>Legitimate interest</strong> in protecting players and the integrity of the Services, and <strong>performance of a contract</strong>.</td>
+        </tr>
+        <tr>
+            <td>Diagnosing crashes, fixing bugs and improving performance</td>
+            <td>Diagnostic data, technical data</td>
+            <td><strong>Legitimate interest</strong> in maintaining and improving our products.</td>
+        </tr>
+        <tr>
+            <td>Understanding, in aggregate, how the game is played and balanced</td>
+            <td>Gameplay data, technical data</td>
+            <td><strong>Legitimate interest</strong> in game design and balance. We use aggregated and de-identified data wherever it will do the job.</td>
+        </tr>
+        <tr>
+            <td>Sending you newsletters and game announcements</td>
+            <td>Marketing data, contact data</td>
+            <td><strong>Consent</strong>, which you may withdraw at any time. Where permitted, our <strong>legitimate interest</strong> in contacting existing players about our own similar products, subject to an opt-out in every message.</td>
+        </tr>
+        <tr>
+            <td>Optional analytics and marketing cookies on our website</td>
+            <td>Website data</td>
+            <td><strong>Consent</strong>.</td>
+        </tr>
+        <tr>
+            <td>Signing you in with an Epic Games account, and showing your Epic friends in-game</td>
+            <td>Epic account ID, display name, and &mdash; only if you consent &mdash; email address and friends list</td>
+            <td><strong>Consent</strong> for the data Epic Account Services requires your consent to share, and <strong>performance of a contract</strong> for the account linkage itself. See Section 6.</td>
+        </tr>
+        <tr>
+            <td>Meeting our legal, tax, accounting and regulatory obligations</td>
+            <td>Transaction data, account data, contact data</td>
+            <td><strong>Legal obligation</strong>.</td>
+        </tr>
+        <tr>
+            <td>Establishing, exercising or defending legal claims</td>
+            <td>Any relevant category</td>
+            <td><strong>Legitimate interest</strong> in protecting our legal rights, and <strong>legal obligation</strong> where applicable.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<p>Where we rely on <strong>legitimate interests</strong>, we have assessed that our interest is not overridden by your interests or fundamental rights. You may ask us for a summary of that assessment, and you have the right to object &mdash; see Section 13.</p>
+
+<p>Where we rely on <strong>consent</strong>, you may withdraw it at any time. Withdrawing consent does not affect processing carried out before you withdrew it, and it does not affect processing we carry out on another basis.</p>
+
+<h3>5.1 No automated decision-making with legal effects</h3>
+<p>We use automated systems to detect cheating and abuse. Where such a system contributes to a sanction that meaningfully affects your access to the Services &mdash; such as a permanent ban &mdash; you may request human review by contacting <a href="mailto:{{ site.company.support_email }}">{{ site.company.support_email }}</a>. We do not carry out profiling that produces legal effects concerning you or similarly significantly affects you outside this context.</p>
+
+<h2 id="s6">6. Epic Games, Epic Account Services and Unreal Engine</h2>
+
+<p>{{ site.game.title }} is built with {{ site.game.engine }} and uses <strong>Epic Online Services</strong>, including <strong>Epic Account Services</strong>, provided by Epic Games, Inc. This section explains exactly what that means for your data.</p>
+
+<h3>6.1 Signing in with an Epic Games account</h3>
+<p>You may choose to sign in to {{ site.game.title }} using an Epic Games account. If you do, Epic Account Services will ask you, in a consent screen presented by Epic, to permit the sharing of certain information with {{ site.company.name }}. Depending on what you approve, we may receive:</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Information</th><th>Consent required</th><th>What we use it for</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Epic account ID</td>
+            <td>Basic profile access</td>
+            <td>Identifying your player account and linking it to your progression.</td>
+        </tr>
+        <tr>
+            <td>Epic display name</td>
+            <td>Basic profile access</td>
+            <td>Showing your name in-game, in scoreboards and to teammates.</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>Basic profile access</td>
+            <td>Applying regional settings and legal requirements.</td>
+        </tr>
+        <tr>
+            <td>Email address</td>
+            <td>Your explicit consent</td>
+            <td>Account recovery, service notices, and &mdash; only if you separately opt in &mdash; newsletters.</td>
+        </tr>
+        <tr>
+            <td>Epic friends list</td>
+            <td>Your explicit consent</td>
+            <td>Showing which of your Epic friends play {{ site.game.title }}, and letting you invite them to a party.</td>
+        </tr>
+        <tr>
+            <td>Presence / online status</td>
+            <td>Your explicit consent</td>
+            <td>Showing your friends when you are online and joinable.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<p>We request the minimum set of permissions the feature needs. We do not receive your Epic Games password, your payment details, or your purchase history on the Epic Games Store.</p>
+
+<h3>6.2 Withdrawing your Epic consent</h3>
+<p>You can review and withdraw the permissions you granted to {{ site.game.title }} at any time in the <strong>Apps</strong> or <strong>Connected Accounts</strong> section of your Epic Games account settings at <a href="https://www.epicgames.com/account/connections" target="_blank" rel="noopener">epicgames.com/account/connections</a>. Withdrawing a permission stops any further sharing of that information with us. It may also disable the feature that depended on it &mdash; for example, removing friends-list access will stop your Epic friends appearing in-game.</p>
+
+<p>Withdrawing consent at Epic does not by itself delete the data we have already received. To have that deleted, make a request under Section 13.</p>
+
+<h3>6.3 Epic as an independent controller</h3>
+<p>When you use an Epic Games account, Epic Games, Inc. processes your data as an <strong>independent controller</strong> under its own privacy policy, not as our processor. That includes the account, sign-in and platform data Epic holds about you. Epic also processes certain data as our service provider when we use Epic Online Services features such as matchmaking, lobbies and player data storage.</p>
+
+<p>Epic's own practices are described in the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank" rel="noopener">Epic Games Privacy Policy</a>. Questions about the data Epic holds about your Epic Games account should be directed to Epic.</p>
+
+<h3>6.4 Unreal Engine</h3>
+<p>{{ site.game.title }} is developed with Unreal Engine under a licence from Epic Games, Inc. Unreal Engine may transmit limited technical and crash data to Epic Games as described in Epic's documentation and privacy policy. {{ site.company.name }} is an Unreal Engine licensee and is <strong>not affiliated with, endorsed by, or sponsored by Epic Games, Inc.</strong></p>
+
+<h2 id="s7">7. Who we share your data with</h2>
+
+<p><strong>We do not sell your personal data.</strong> We share it only in the circumstances below.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Recipient</th><th>Why</th><th>Their role</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Epic Games, Inc.</td>
+            <td>Account sign-in, matchmaking, lobbies and online services for {{ site.game.title }}.</td>
+            <td>Independent controller for your Epic account; processor for the Epic Online Services features we use. See Section 6.</td>
+        </tr>
+        <tr>
+            <td>Hosting and infrastructure providers</td>
+            <td>Running game servers, databases, backups and this website.</td>
+            <td>Processors acting on our instructions.</td>
+        </tr>
+        <tr>
+            <td>Digital storefronts and platform holders</td>
+            <td>Distributing the game, processing purchases, and delivering entitlements.</td>
+            <td>Independent controllers under their own policies.</td>
+        </tr>
+        <tr>
+            <td>Payment processors</td>
+            <td>Taking payment and handling refunds. They handle card data; we do not.</td>
+            <td>Independent controllers or processors depending on the arrangement.</td>
+        </tr>
+        <tr>
+            <td>Player support and ticketing tools</td>
+            <td>Receiving, tracking and answering your support requests.</td>
+            <td>Processors.</td>
+        </tr>
+        <tr>
+            <td>Crash reporting and analytics providers</td>
+            <td>Diagnosing crashes and understanding stability and performance.</td>
+            <td>Processors.</td>
+        </tr>
+        <tr>
+            <td>Anti-cheat and security providers</td>
+            <td>Detecting cheating, exploits and fraud.</td>
+            <td>Processors.</td>
+        </tr>
+        <tr>
+            <td>Email and community platforms</td>
+            <td>Sending newsletters you have subscribed to and running community channels.</td>
+            <td>Processors.</td>
+        </tr>
+        <tr>
+            <td>Professional advisers</td>
+            <td>Legal, accounting, audit and insurance advice.</td>
+            <td>Independent controllers, bound by professional duties of confidence.</td>
+        </tr>
+        <tr>
+            <td>Law enforcement, regulators and courts</td>
+            <td>Where we are legally required to disclose, or where disclosure is necessary to establish or defend legal claims or to protect someone's vital interests.</td>
+            <td>Independent controllers.</td>
+        </tr>
+        <tr>
+            <td>An acquirer or successor</td>
+            <td>If {{ site.company.name }} is involved in a merger, acquisition, financing or sale of assets, your data may transfer as part of that transaction.</td>
+            <td>Controller, subject to this policy until they lawfully change it with notice to you.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<h3>7.1 Other players</h3>
+<p>Some information is shared with other players as an inherent part of a multiplayer game: your display name, your scoreboard statistics, your presence in a match, and anything you say in text or voice chat. Do not disclose personal information about yourself in chat that you would not want other players to have.</p>
+
+<h3>7.2 Our contracts with processors</h3>
+<p>Every processor we engage is bound by a written contract requiring them to process personal data only on our documented instructions, to keep it confidential, to apply appropriate security measures, and to delete or return it at the end of the engagement.</p>
+
+<h2 id="s8">8. Marketing and your choices</h2>
+
+<p>We will only send you marketing email where you have subscribed, or where the law permits us to contact an existing player about our own similar products. Every marketing message we send contains an unsubscribe link that works immediately.</p>
+
+<p>You can also opt out at any time by emailing <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>. Opting out of marketing does not stop service messages &mdash; account security notices, changes to our terms, and messages about your support tickets &mdash; because we need to send those to run the Services.</p>
+
+<h2 id="s9">9. Cookies and similar technologies</h2>
+
+<p>Our website uses a small number of cookies and equivalent technologies such as local storage.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Type</th><th>Purpose</th><th>Basis</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Strictly necessary</strong></td><td>Security, load balancing and remembering your cookie choices.</td><td>Set without consent, as the law permits.</td></tr>
+        <tr><td><strong>Preference</strong></td><td>Remembering settings such as language.</td><td>Consent where required.</td></tr>
+        <tr><td><strong>Analytics</strong></td><td>Understanding, in aggregate, how the site is used so we can improve it.</td><td>Consent.</td></tr>
+    </tbody>
+</table>
+</div>
+
+<p>We do not use advertising or cross-site tracking cookies. You can block or delete cookies through your browser settings; strictly necessary cookies cannot be refused without affecting how the site works.</p>
+
+<p>The game client itself does not use browser cookies, but it does store local identifiers and settings on your device in order to function.</p>
+
+<h3>9.1 Do Not Track and Global Privacy Control</h3>
+<p>There is no common industry standard for responding to browser "Do Not Track" signals, and we do not currently respond to them. We do honour the <strong>Global Privacy Control (GPC)</strong> signal where applicable law requires it, treating it as a valid opt-out of any sale or sharing of personal data &mdash; though, as stated, we do not sell or share personal data in the first place.</p>
+
+<h2 id="s10">10. How long we keep your data</h2>
+
+<p>We keep personal data only as long as we need it for the purpose we collected it for, or as long as the law requires.</p>
+
+<div class="table-scroll">
+<table class="legal-table">
+    <thead>
+        <tr><th>Data</th><th>Retention period</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Account and progression data</td><td>For as long as your account is active, and for up to 24 months after your last sign-in, after which inactive accounts are deleted or anonymised.</td></tr>
+        <tr><td>Support correspondence</td><td>Up to 36 months after the ticket is closed.</td></tr>
+        <tr><td>Diagnostic and crash data</td><td>Up to 12 months.</td></tr>
+        <tr><td>Server and security logs</td><td>Up to 12 months, or longer where an investigation is open.</td></tr>
+        <tr><td>Moderation, sanction and anti-cheat records</td><td>For as long as the sanction is in force, and thereafter as needed to enforce a permanent ban and prevent evasion.</td></tr>
+        <tr><td>Transaction records</td><td>As required by tax and accounting law, typically seven years.</td></tr>
+        <tr><td>Marketing subscription data</td><td>Until you unsubscribe, plus a minimal suppression record so we do not contact you again.</td></tr>
+        <tr><td>Website analytics</td><td>Up to 14 months, in aggregated form.</td></tr>
+    </tbody>
+</table>
+</div>
+
+<p>Where we no longer need data but cannot immediately delete it &mdash; for example because it exists in a backup &mdash; we isolate it from further active processing and delete it on the normal backup cycle.</p>
+
+<h2 id="s11">11. International data transfers</h2>
+
+<p>{{ site.company.name }} is established in the {{ site.company.country }}, and our service providers may be located in other countries. This means your personal data may be transferred to, stored in, and processed in countries outside your own, including the United States, which may not provide the same level of data protection as your home country.</p>
+
+<p>Where we transfer personal data out of the United Kingdom, the European Economic Area or Switzerland, we rely on one or more of the following safeguards:</p>
+<ul>
+    <li>the European Commission's <strong>Standard Contractual Clauses</strong> (Decision 2021/914), and for UK transfers the <strong>UK International Data Transfer Addendum</strong> or the UK IDTA, in each case with any supplementary measures the transfer risk assessment identifies as necessary;</li>
+    <li>an <strong>adequacy decision</strong> covering the destination country, where one is in force; or</li>
+    <li>another safeguard permitted by Article 46 of the GDPR.</li>
 </ul>
 
-<h3>1.2 Information Collected Automatically</h3>
-<p>When you use our Services, we automatically collect certain information, including:</p>
+<p>You may request a copy of the safeguards we rely on for a particular transfer by writing to <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>.</p>
+
+<h2 id="s12">12. How we protect your data</h2>
+
+<p>We maintain technical and organisational measures appropriate to the risk, including:</p>
 <ul>
-    <li><strong>Device Information:</strong> Hardware model, operating system version, unique device identifiers, IP address, browser type, and mobile network information</li>
-    <li><strong>Gameplay Information:</strong> Game progress, scores, achievements, playtime, in-game purchases, and other gameplay statistics</li>
-    <li><strong>Log Information:</strong> System activity, error reports, crash data, hardware settings, date and time of access, and referring URLs</li>
-    <li><strong>Location Information:</strong> General geographic location based on IP address</li>
-    <li><strong>Cookies and Similar Technologies:</strong> We use cookies, pixels, local storage, and similar technologies to collect information about your browsing activities</li>
+    <li>encryption of data in transit using TLS, and encryption at rest for our databases and backups;</li>
+    <li>access control on a least-privilege basis, with multi-factor authentication on administrative accounts;</li>
+    <li>segregation of production systems from development and test environments;</li>
+    <li>logging and monitoring of access to systems holding personal data;</li>
+    <li>vendor due diligence before we engage a processor; and</li>
+    <li>an internal process for identifying, containing and reporting personal data breaches.</li>
 </ul>
 
-<h3>1.3 Information from Third Parties</h3>
-<p>We may receive information from third-party services, including:</p>
+<p>Where a breach is likely to result in a risk to your rights and freedoms, we will notify the relevant supervisory authority within 72 hours of becoming aware of it, and we will notify affected individuals without undue delay where the law requires it.</p>
+
+<p>No system is perfectly secure. You are responsible for keeping your own account credentials confidential and for using a strong, unique password on any account you use to access our Services.</p>
+
+<h2 id="s13">13. Your privacy rights</h2>
+
+<p>Subject to the law that applies to you, you have the following rights over your personal data:</p>
+
 <ul>
-    <li><strong>Epic Games and Unreal Engine:</strong> When you play our games built with Unreal Engine, Epic Games may collect certain technical and usage data as described in the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank">Epic Games Privacy Policy</a></li>
-    <li><strong>Social Media Platforms:</strong> If you connect your account to social media services, we may receive profile information you've authorized those services to share</li>
-    <li><strong>Analytics Providers:</strong> Information from analytics services like Google Analytics, including usage patterns and demographic information</li>
-    <li><strong>Payment Processors:</strong> Transaction confirmation and payment status from payment service providers</li>
+    <li><strong>Access</strong> &mdash; to be told whether we process your data, and to receive a copy of it.</li>
+    <li><strong>Rectification</strong> &mdash; to have inaccurate data corrected and incomplete data completed.</li>
+    <li><strong>Erasure</strong> &mdash; to have your data deleted where we no longer have grounds to keep it.</li>
+    <li><strong>Restriction</strong> &mdash; to have our processing limited while a dispute about accuracy or lawfulness is resolved.</li>
+    <li><strong>Portability</strong> &mdash; to receive data you provided to us in a structured, commonly used, machine-readable format, and to have it transmitted to another controller where technically feasible.</li>
+    <li><strong>Objection</strong> &mdash; to object to processing we carry out on the basis of legitimate interests, and an absolute right to object to direct marketing.</li>
+    <li><strong>Withdrawal of consent</strong> &mdash; to withdraw any consent you have given, at any time.</li>
+    <li><strong>Non-discrimination</strong> &mdash; not to be treated less favourably for exercising a privacy right.</li>
 </ul>
 
-<h2>2. How We Use Your Information</h2>
+<h3>13.1 How to make a request</h3>
+<p>Email <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a> with the subject line <strong>"Privacy Request"</strong>. Tell us which right you are exercising and give us enough information to find your records &mdash; typically your in-game player name and the email address or account identifier you use.</p>
 
-<p>We use the information we collect for the following purposes:</p>
+<p>We will verify your identity before acting, in proportion to the sensitivity of the request. We may ask you to confirm the request from the email address on the account, or to answer a question only the account holder would know. We do not require you to create an account in order to make a request.</p>
+
+<p>We respond within <strong>30 days</strong> for GDPR requests and within <strong>45 days</strong> for requests under US state privacy laws. Where a request is complex or we receive several from you, we may extend by a further period permitted by law and will tell you if we do. Requests are free, unless they are manifestly unfounded or excessive, in which case we may charge a reasonable fee or decline &mdash; and we will explain why.</p>
+
+<h3>13.2 Authorised agents</h3>
+<p>You may use an authorised agent to make a request on your behalf where the law allows. We will ask for written proof of the agent's authority and may still verify your identity directly.</p>
+
+<h2 id="s14">14. Additional disclosures for United States residents</h2>
+
+<p>This section applies if you are a resident of California, Virginia, Colorado, Connecticut, Utah, Texas, Oregon, Montana or another US state with a comprehensive consumer privacy law.</p>
+
+<h3>14.1 Categories collected, disclosed, sold or shared</h3>
+<p>In the preceding twelve months we have collected the categories of personal information listed in Section 4, and disclosed them for business purposes to the categories of recipients listed in Section 7.</p>
+
+<p><strong>We have not sold personal information, and we have not shared personal information for cross-context behavioural advertising.</strong> We have not sold or shared the personal information of consumers we know to be under 16.</p>
+
+<h3>14.2 Sensitive personal information</h3>
+<p>We do not collect sensitive personal information for the purpose of inferring characteristics about you, and we do not use or disclose it beyond the purposes permitted without a right to limit under the CCPA/CPRA.</p>
+
+<h3>14.3 Your rights</h3>
+<p>Depending on your state, you have the right to know, access, correct and delete your personal information; the right to obtain a portable copy; the right to opt out of sale, sharing, targeted advertising and certain profiling; the right to limit the use of sensitive personal information; and the right not to be discriminated against for exercising these rights. Exercise them as described in Section 13.1.</p>
+
+<h3>14.4 Right to appeal</h3>
+<p>If we decline your request, you may appeal by replying to our decision or emailing <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a> with the subject line <strong>"Privacy Appeal"</strong>. We will respond to an appeal within 45 days with a written explanation of our decision. If we deny the appeal, we will tell you how to contact your state Attorney General to submit a complaint.</p>
+
+<h3>14.5 Shine the Light</h3>
+<p>California Civil Code section 1798.83 permits California residents to request information about disclosure of personal information to third parties for their direct marketing purposes. We do not make such disclosures.</p>
+
+<h2 id="s15">15. Additional disclosures for other regions</h2>
+
+<h3>15.1 European Economic Area, United Kingdom and Switzerland</h3>
+<p>Our lawful bases are set out in Section 5, our transfer safeguards in Section 11, and your rights in Section 13. You have the right to lodge a complaint with your local supervisory authority &mdash; in the UK, the Information Commissioner's Office at <a href="https://ico.org.uk/" target="_blank" rel="noopener">ico.org.uk</a>. We have not appointed an EU or UK representative under Article 27; if we become required to, we will name them here.</p>
+
+<h3>15.2 Canada</h3>
+<p>We comply with the Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable provincial legislation, including Quebec's Law 25. You may complain to the Office of the Privacy Commissioner of Canada.</p>
+
+<h3>15.3 Australia</h3>
+<p>We handle personal information in accordance with the Australian Privacy Principles under the Privacy Act 1988 (Cth). You may complain to the Office of the Australian Information Commissioner.</p>
+
+<h3>15.4 Brazil</h3>
+<p>Where the Lei Geral de Proteção de Dados (LGPD) applies, you have rights of confirmation, access, correction, anonymisation, portability, deletion and information about sharing, and you may complain to the ANPD.</p>
+
+<h3>15.5 Japan and South Korea</h3>
+<p>Where the Act on the Protection of Personal Information (Japan) or the Personal Information Protection Act (South Korea) applies, we process personal data in accordance with those laws, including their requirements for consent to overseas transfer.</p>
+
+<h2 id="s16">16. Third-party services and links</h2>
+
+<p>Our Services link to and interoperate with services we do not control. Their handling of your data is governed by their own policies, not ours:</p>
 <ul>
-    <li><strong>Service Provision:</strong> To provide, maintain, and improve our games and Services</li>
-    <li><strong>Account Management:</strong> To create and manage your account, verify your identity, and authenticate users</li>
-    <li><strong>Customer Support:</strong> To respond to your inquiries, provide technical support, and resolve disputes</li>
-    <li><strong>Game Functionality:</strong> To enable multiplayer features, save game progress, track achievements, and provide personalized gaming experiences</li>
-    <li><strong>Communications:</strong> To send you service-related announcements, updates, security alerts, and administrative messages</li>
-    <li><strong>Marketing:</strong> To send you promotional materials, newsletters, and information about new features or products (you may opt out at any time)</li>
-    <li><strong>Analytics and Improvement:</strong> To analyze usage patterns, monitor and analyze trends, and improve our Services</li>
-    <li><strong>Security and Fraud Prevention:</strong> To detect, prevent, and address technical issues, fraudulent activity, and violations of our Terms of Service</li>
-    <li><strong>Legal Compliance:</strong> To comply with applicable laws, regulations, legal processes, or governmental requests</li>
-    <li><strong>Business Operations:</strong> To facilitate business transactions, such as mergers, acquisitions, or asset sales</li>
+    <li><a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank" rel="noopener">Epic Games Privacy Policy</a></li>
+    <li>The privacy policy of whichever digital storefront you obtained the game from</li>
+    <li>The privacy policy of any social or community platform you use to reach us</li>
 </ul>
+<p>We are not responsible for the content or privacy practices of third-party sites. Please read their policies before providing them with personal data.</p>
 
-<h2>3. How We Share Your Information</h2>
+<h2 id="s17">17. Changes to this policy</h2>
 
-<p>We may share your information in the following circumstances:</p>
+<p>We may update this Privacy Policy to reflect changes to our Services, our processors, or the law. When we do, we will update the "Last Updated" date at the top of this page.</p>
 
-<h3>3.1 Service Providers</h3>
-<p>We share information with third-party service providers who perform services on our behalf, including:</p>
-<ul>
-    <li>Cloud hosting providers (AWS, Google Cloud, Microsoft Azure, etc.)</li>
-    <li>Analytics providers (Google Analytics, Unity Analytics, etc.)</li>
-    <li>Payment processors (Stripe, PayPal, etc.)</li>
-    <li>Customer support platforms</li>
-    <li>Email service providers</li>
-    <li>Content delivery networks</li>
-</ul>
+<p>Where a change is material &mdash; for example, a new purpose for processing, or a new category of recipient &mdash; we will give you prominent advance notice through the game, by email, or on this website, and where the law requires it we will obtain your consent before the change takes effect. Previous versions are available on request from <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>.</p>
 
-<h3>3.2 Epic Games and Unreal Engine</h3>
-<p>Our games are built using Unreal Engine, and Epic Games may collect certain technical and usage data as described in their privacy policy. This may include:</p>
-<ul>
-    <li>Hardware specifications and performance metrics</li>
-    <li>Crash reports and error logs</li>
-    <li>Plugin usage and engine analytics</li>
-    <li>Aggregated usage statistics</li>
-</ul>
-<p>Epic Games processes this data as a separate data controller. Please review the <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank">Epic Games Privacy Policy</a> for more information.</p>
+<h2 id="s18">18. How to complain</h2>
 
-<h3>3.3 Legal Requirements</h3>
-<p>We may disclose your information if required by law or in response to:</p>
-<ul>
-    <li>Legal processes (subpoenas, court orders, etc.)</li>
-    <li>Governmental or regulatory requests</li>
-    <li>National security or law enforcement requirements</li>
-    <li>Protection of our rights, property, or safety, or that of our users or the public</li>
-</ul>
+<p>If you are unhappy with how we have handled your personal data, please tell us first at <a href="mailto:{{ site.company.privacy_email }}">{{ site.company.privacy_email }}</a>. We would rather resolve it directly, and we take complaints seriously.</p>
 
-<h3>3.4 Business Transfers</h3>
-<p>If we are involved in a merger, acquisition, asset sale, or bankruptcy, your information may be transferred as part of that transaction.</p>
-
-<h3>3.5 With Your Consent</h3>
-<p>We may share your information with third parties when you have given us explicit consent to do so.</p>
-
-<p><strong>We do not sell or share your personal information for cross-context behavioral advertising purposes as defined by applicable privacy laws.</strong></p>
-
-<h2>4. Data Retention</h2>
-
-<p>We retain your information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. Retention periods vary depending on the type of information and the purposes for which we use it:</p>
-<ul>
-    <li><strong>Account Information:</strong> Retained until you delete your account, plus an additional period to comply with legal obligations</li>
-    <li><strong>Gameplay Data:</strong> Retained for the duration of your active use, plus a reasonable period for backup and recovery purposes</li>
-    <li><strong>Customer Support Records:</strong> Retained for up to 3 years after the last interaction</li>
-    <li><strong>Analytics Data:</strong> Typically aggregated and anonymized after 26 months</li>
-    <li><strong>Legal and Compliance Records:</strong> Retained as required by applicable law</li>
-</ul>
-
-<h2>5. Data Security</h2>
-
-<p>We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction, including:</p>
-<ul>
-    <li>Encryption of data in transit and at rest using industry-standard protocols (SSL/TLS)</li>
-    <li>Regular security audits and penetration testing</li>
-    <li>Access controls and authentication mechanisms</li>
-    <li>Employee training on data protection and privacy</li>
-    <li>Incident response and breach notification procedures</li>
-</ul>
-
-<p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
-
-<h2>6. Cookies and Tracking Technologies</h2>
-
-<p>We use cookies and similar tracking technologies to collect and store information. Cookies are small data files stored on your device that help us improve our Services and your experience.</p>
-
-<h3>Types of Cookies We Use:</h3>
-<ul>
-    <li><strong>Essential Cookies:</strong> Required for basic website functionality and cannot be disabled</li>
-    <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our Services (Google Analytics, etc.)</li>
-    <li><strong>Functional Cookies:</strong> Enable enhanced functionality and personalization (language preferences, etc.)</li>
-    <li><strong>Advertising Cookies:</strong> Used to deliver relevant advertisements (if applicable)</li>
-</ul>
-
-<p>You can control cookies through your browser settings, but disabling certain cookies may limit your ability to use some features of our Services.</p>
-
-<h2>7. Your Privacy Rights</h2>
-
-<p>Depending on your location, you may have certain rights regarding your personal information:</p>
-
-<h3>7.1 General Rights</h3>
-<ul>
-    <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
-    <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
-    <li><strong>Deletion:</strong> Request deletion of your personal information (subject to legal obligations)</li>
-    <li><strong>Data Portability:</strong> Request a copy of your information in a portable format</li>
-    <li><strong>Objection:</strong> Object to certain processing of your information</li>
-    <li><strong>Restriction:</strong> Request restriction of processing in certain circumstances</li>
-    <li><strong>Withdraw Consent:</strong> Withdraw consent for processing based on consent (without affecting prior processing)</li>
-</ul>
-
-<h3>7.2 Rights for EU/EEA/UK Residents (GDPR)</h3>
-<p>If you are located in the European Union, European Economic Area, or United Kingdom, you have additional rights under the General Data Protection Regulation (GDPR), including:</p>
-<ul>
-    <li>The right to lodge a complaint with a supervisory authority</li>
-    <li>The right to receive clear information about processing activities</li>
-    <li>Enhanced rights regarding automated decision-making and profiling</li>
-</ul>
-
-<h3>7.3 Rights for California Residents (CCPA/CPRA)</h3>
-<p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including:</p>
-<ul>
-    <li>Right to know what personal information is collected, used, shared, or sold</li>
-    <li>Right to delete personal information (subject to exceptions)</li>
-    <li>Right to opt out of the sale or sharing of personal information</li>
-    <li>Right to correct inaccurate personal information</li>
-    <li>Right to limit use and disclosure of sensitive personal information</li>
-    <li>Right to non-discrimination for exercising your privacy rights</li>
-</ul>
-
-<p><strong>Note:</strong> We do not sell or share personal information as defined by CCPA/CPRA.</p>
-
-<h3>7.4 Rights for Virginia Residents (VCDPA)</h3>
-<p>Virginia residents have similar rights under the Virginia Consumer Data Protection Act.</p>
-
-<h3>7.5 How to Exercise Your Rights</h3>
-<p>To exercise any of these rights, please contact us at:</p>
-<ul>
-    <li>Email: privacy@impactforge.com</li>
-    <li>General Inquiries: impactforgellc@gmail.com</li>
-    <li>Contact Form: Available on our website</li>
-</ul>
-<p>We will respond to your request within the timeframe required by applicable law (typically 30-45 days). We may need to verify your identity before processing your request.</p>
-
-<h2>8. Children's Privacy</h2>
-
-<p>Our Services are not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children under 13.</p>
-
-<p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately. If we learn that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information promptly.</p>
-
-<p>For users between 13 and 18, we recommend parental supervision and encourage parents to monitor their children's online activities.</p>
-
-<h2>9. International Data Transfers</h2>
-
-<p>Your information may be transferred to and processed in countries other than your country of residence, including the United States and other jurisdictions where our service providers operate. These countries may have data protection laws that differ from those in your country.</p>
-
-<p>When we transfer personal information from the EU/EEA/UK to other countries, we ensure appropriate safeguards are in place, such as:</p>
-<ul>
-    <li>Standard Contractual Clauses approved by the European Commission</li>
-    <li>Adequacy decisions by relevant authorities</li>
-    <li>Other legally approved transfer mechanisms</li>
-</ul>
-
-<h2>10. Third-Party Links and Services</h2>
-
-<p>Our Services may contain links to third-party websites, services, or applications that are not operated by us. This Privacy Policy does not apply to third-party services. We encourage you to review the privacy policies of any third-party services you access through our Services.</p>
-
-<p>Third-party services that may be integrated with our games include:</p>
-<ul>
-    <li>Epic Games and Unreal Engine</li>
-    <li>Steam, PlayStation Network, Xbox Live, or other gaming platforms</li>
-    <li>Social media platforms (Discord, Twitter, Facebook, etc.)</li>
-    <li>Analytics and advertising services</li>
-</ul>
-
-<h2>11. Do Not Track Signals</h2>
-
-<p>Some browsers include a "Do Not Track" (DNT) feature that signals to websites you visit that you do not want your online activity tracked. Because there is not yet a common understanding of how to interpret DNT signals, our Services do not currently respond to DNT signals.</p>
-
-<h2>12. Changes to This Privacy Policy</h2>
-
-<p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or for other operational, legal, or regulatory reasons. When we make material changes, we will:</p>
-<ul>
-    <li>Update the "Last Updated" date at the top of this policy</li>
-    <li>Notify you through our Services, email, or other appropriate means</li>
-    <li>Obtain your consent if required by applicable law</li>
-</ul>
-
-<p>We encourage you to review this Privacy Policy periodically. Your continued use of our Services after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
-
-<h2>13. Contact Information</h2>
-
-<p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
-
-<p><strong>Impact Forge LLC</strong><br>
-Email: privacy@impactforge.com<br>
-General Inquiries: impactforgellc@gmail.com<br>
-Mailing Address: [ADD PHYSICAL MAILING ADDRESS OR REGISTERED AGENT ADDRESS HERE]<br>
-Contact Form: <a href="/contact.html">https://impactforge.com/contact.html</a></p>
-
-<p><strong>Data Protection Officer (if applicable):</strong><br>
-Email: dpo@impactforge.com</p>
-
-<p>For EU/EEA residents, if you believe we have not adequately addressed your concerns, you have the right to lodge a complaint with your local supervisory authority.</p>
-
-<h2>14. Additional Information for Specific Jurisdictions</h2>
-
-<h3>14.1 European Union/EEA/UK</h3>
-<p><strong>Legal Basis for Processing:</strong> We process your personal information based on the following legal grounds:</p>
-<ul>
-    <li><strong>Contractual Necessity:</strong> To perform our contract with you (providing Services)</li>
-    <li><strong>Legitimate Interests:</strong> For our legitimate business interests (improving Services, security, etc.)</li>
-    <li><strong>Consent:</strong> Where you have given consent (marketing communications, optional features, etc.)</li>
-    <li><strong>Legal Obligation:</strong> To comply with legal requirements</li>
-</ul>
-
-<p><strong>Data Controller:</strong> Impact Forge LLC serves as the data controller for your personal information. Contact details and mailing address are provided in Section 13 above.</p>
-
-<h3>14.2 Australia</h3>
-<p>If you are located in Australia, we comply with the Australian Privacy Principles under the Privacy Act 1988. You may lodge a complaint with the Office of the Australian Information Commissioner if you are not satisfied with our response to your privacy concerns.</p>
-
-<h3>14.3 Canada</h3>
-<p>If you are located in Canada, we comply with the Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable provincial privacy laws. You may file a complaint with the Privacy Commissioner of Canada if you believe we have not addressed your concerns appropriately.</p>
+<p>You always retain the right to complain to a data protection authority in the country where you live, where you work, or where you believe an infringement occurred, without contacting us first.</p>
 
 <hr>
 
-<p><em>This Privacy Policy was last updated on August 18, 2026. By using our Services, you acknowledge that you have read and understood this Privacy Policy.</em></p>
+<p style="font-size:0.9rem;color:var(--text-faint);">
+    {{ site.company.name }} &mdash; {{ site.company.role }} of {{ site.game.title }}.
+    {% include entity-line.html %}
+    This Privacy Policy was last updated on 24 August 2026.
+</p>
+
+</div>
 </div>
