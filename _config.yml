@@ -15,12 +15,10 @@ company:
   name: "Impact Forge LLC"
   short_name: "Impact Forge"
   entity_type: "Limited Liability Company"
-  # Set to the US state Impact Forge LLC is registered in (e.g. "Delaware").
-  # Leave blank and the site says "the United States" instead of naming a state.
   jurisdiction: "Minnesota"
   country: "United States"
   role: "Developer and Publisher"
-  founded: "2025"
+  founded: "2020"
   email: "contact@battlespace.dev"
   support_email: "support@battlespace.dev"
   privacy_email: "privacy@battlespace.dev"
@@ -43,7 +41,7 @@ game:
   status: "In Development"
   release: "To be announced"
   rating: "Not yet rated"
-  players: "Up to 64 players per match"
+  players: "Up to 100 players per match"
 
 # Build settings
 markdown: kramdown
