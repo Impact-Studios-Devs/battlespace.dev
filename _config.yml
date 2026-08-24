@@ -17,7 +17,7 @@ company:
   entity_type: "Limited Liability Company"
   # Set to the US state Impact Forge LLC is registered in (e.g. "Delaware").
   # Leave blank and the site says "the United States" instead of naming a state.
-  jurisdiction: ""
+  jurisdiction: "Minnesota"
   country: "United States"
   role: "Developer and Publisher"
   founded: "2025"
